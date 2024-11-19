@@ -106,13 +106,14 @@ result = (
 print(result)
 
 #==================================================================
-#JOING DATAFRAMES
+#JOINING DATAFRAMES
 
 df2 = pl.DataFrame(
     {
         "name":["Benedict Benjamin","Daniel Donovan","Alice Archer","Chloe Cooper"],
         "parent":[True, False, False, False],
         "siblings":[1, 2, 3, 4],
+        "Nationality":["Tanzanian","Ugandan","Kenyan","Ethiopian"]
     }
 )
 print(df.join(df2, on="name", how="left"))
